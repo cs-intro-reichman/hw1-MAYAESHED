@@ -8,11 +8,11 @@ public class Ascend {
 		int b = (int) (Math.random() * lim + 1);
 		int c = (int) (Math.random() * lim + 1);
 		//Finds out the min, middle and max values
-		int MinValue = Math.min(a, Math.min(b, c));
-		int MaxValue = Math.max (a, Math.max(b, c));
-		int MidValue = a + b + c - MinValue - MaxValue;
+		int minValue = Math.min(a, Math.min(b, c));
+		int maxValue = Math.max(a, Math.max(b, c));
+		int midValue = a + b + c - minValue - maxValue;
 
 		System.out.println(a + " " + b + " " + c);
-		System.out.println(MinValue + " " + MidValue + " " + MaxValue);
+		System.out.println(minValue + " " + midValue + " " + maxValue);
 	}
 }
